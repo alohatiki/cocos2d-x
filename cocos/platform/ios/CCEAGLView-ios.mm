@@ -179,6 +179,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
     return self;
 }
 
+#ifndef TVOS_UNSUPPORTED
 - (void)didMoveToWindow;
 {
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -196,6 +197,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
                                              selector:@selector(onUIKeyboardNotification:)
                                                  name:UIKeyboardDidHideNotification object:nil];
 }
+#endif
 
 -(int) getWidth
 {
@@ -727,6 +729,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 
 #pragma mark - UIKeyboard notification
 
+#ifndef TVOS_UNSUPPORTED
 - (void)onUIKeyboardNotification:(NSNotification *)notif;
 {
     NSString * type = notif.name;
@@ -860,6 +863,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
         isKeyboardShown_ = NO;
     }
 }
+#endif
 
 #if !defined(CC_TARGET_OS_TVOS)
 UIInterfaceOrientation getFixedOrientation(UIInterfaceOrientation statusBarOrientation)

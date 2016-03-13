@@ -16627,6 +16627,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = "";
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -16664,6 +16665,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				ENABLE_BITCODE = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
@@ -16767,6 +16769,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ENABLE_BITCODE = YES;
 				EXECUTABLE_PREFIX = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "../cocos/platform/ios/cocos2d-prefix.pch";
@@ -16778,19 +16781,20 @@
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../external/png/prebuilt/ios\"",
-					"\"$(SRCROOT)/../external/jpeg/prebuilt/ios\"",
-					"\"$(SRCROOT)/../external/tiff/prebuilt/ios\"",
-					"\"$(SRCROOT)/../external/webp/prebuilt/ios\"",
-					"\"$(SRCROOT)/../external/freetype2/prebuilt/ios\"",
-					"\"$(SRCROOT)/../external/curl/prebuilt/ios\"",
-					"\"$(SRCROOT)/../external/websockets/prebuilt/ios\"",
-					"\"$(SRCROOT)/../external/chipmunk/prebuilt/ios\"",
+					"\"$(SRCROOT)/../external/png/prebuilt/tvos\"",
+					"\"$(SRCROOT)/../external/jpeg/prebuilt/tvos\"",
+					"\"$(SRCROOT)/../external/tiff/prebuilt/tvos\"",
+					"\"$(SRCROOT)/../external/webp/prebuilt/tvos\"",
+					"\"$(SRCROOT)/../external/freetype2/prebuilt/tvos\"",
+					"\"$(SRCROOT)/../external/curl/prebuilt/tvos\"",
+					"\"$(SRCROOT)/../external/websockets/prebuilt/tvos\"",
+					"\"$(SRCROOT)/../external/chipmunk/prebuilt/tvos\"",
 				);
 				OTHER_LDFLAGS = "-llibsql3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../external/freetype2/include/ios $(SRCROOT)/../external/curl/include/ios $(SRCROOT)/../external/webp/include/ios $(SRCROOT)/../external/tiff/include/ios $(SRCROOT)/../external/jpeg/include/ios $(SRCROOT)/../external/png/include/ios $(SRCROOT)/../external/websockets/include/ios $(SRCROOT)/../external/chipmunk/include/chipmunk $(SRCROOT)/../external/freetype2/include/ios/freetype2";
+				TARGETED_DEVICE_FAMILY = 3;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../external/freetype2/include/tvos $(SRCROOT)/../external/curl/include/tvos $(SRCROOT)/../external/webp/include/tvos $(SRCROOT)/../external/tiff/include/tvos $(SRCROOT)/../external/jpeg/include/tvos $(SRCROOT)/../external/png/include/tvos $(SRCROOT)/../external/websockets/include/ios $(SRCROOT)/../external/chipmunk/include/chipmunk $(SRCROOT)/../external/freetype2/include/tvos/freetype2";
 			};
 			name = Debug;
 		};
@@ -16798,6 +16802,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ENABLE_BITCODE = YES;
 				EXECUTABLE_PREFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -16810,19 +16815,20 @@
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../external/png/prebuilt/ios\"",
-					"\"$(SRCROOT)/../external/jpeg/prebuilt/ios\"",
-					"\"$(SRCROOT)/../external/tiff/prebuilt/ios\"",
-					"\"$(SRCROOT)/../external/webp/prebuilt/ios\"",
-					"\"$(SRCROOT)/../external/freetype2/prebuilt/ios\"",
-					"\"$(SRCROOT)/../external/curl/prebuilt/ios\"",
-					"\"$(SRCROOT)/../external/websockets/prebuilt/ios\"",
-					"\"$(SRCROOT)/../external/chipmunk/prebuilt/ios\"",
+					"\"$(SRCROOT)/../external/png/prebuilt/tvos\"",
+					"\"$(SRCROOT)/../external/jpeg/prebuilt/tvos\"",
+					"\"$(SRCROOT)/../external/tiff/prebuilt/tvos\"",
+					"\"$(SRCROOT)/../external/webp/prebuilt/tvos\"",
+					"\"$(SRCROOT)/../external/freetype2/prebuilt/tvos\"",
+					"\"$(SRCROOT)/../external/curl/prebuilt/tvos\"",
+					"\"$(SRCROOT)/../external/websockets/prebuilt/tvos\"",
+					"\"$(SRCROOT)/../external/chipmunk/prebuilt/tvos\"",
 				);
 				OTHER_LDFLAGS = "-llibsql3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../external/freetype2/include/ios $(SRCROOT)/../external/curl/include/ios $(SRCROOT)/../external/webp/include/ios $(SRCROOT)/../external/tiff/include/ios $(SRCROOT)/../external/jpeg/include/ios $(SRCROOT)/../external/png/include/ios $(SRCROOT)/../external/websockets/include/ios $(SRCROOT)/../external/chipmunk/include/chipmunk $(SRCROOT)/../external/freetype2/include/ios/freetype2";
+				TARGETED_DEVICE_FAMILY = 3;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../external/freetype2/include/tvos $(SRCROOT)/../external/curl/include/tvos $(SRCROOT)/../external/webp/include/tvos $(SRCROOT)/../external/tiff/include/tvos $(SRCROOT)/../external/jpeg/include/tvos $(SRCROOT)/../external/png/include/tvos $(SRCROOT)/../external/websockets/include/ios $(SRCROOT)/../external/chipmunk/include/chipmunk $(SRCROOT)/../external/freetype2/include/tvos/freetype2";
 			};
 			name = Release;
 		};
